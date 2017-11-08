@@ -57,6 +57,14 @@ writeln(StdErr, 'trace sur StdErr');
 - la fonction `LeftTrim(const S: string): string;` retourne une chaîne copie de `S` en enlevant les espaces (et caractères de contrôle) au début de `S`
 - la fonction `RightTrim(const S: string): string;` retourne une chaîne copie de `S` en enlevant les espaces (et caractères de contrôle) à la fin de `S`
 
+```
+var
+  S : string := '  Y2 for ever !  ';
+begin
+  writeln(LeftStr(Trim(S),2)); // Y2
+end;
+```
+
 ## Les tableaux
 - la déclaration d'un tableau statique
 ```
