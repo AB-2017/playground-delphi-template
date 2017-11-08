@@ -10,16 +10,17 @@ Vous pouvez tester les exemples ci-dessous en les recopiant dans la fenêtre ci-
 - l'opérateur d'affectation est `:=`
 - l'opérateur de comparaison est `=`
 - les variables doivent être déclarées dans une section `var` avant d'être utilisées dans la section `begin...end` et ça vaut _même pour les indices de boucle !_
+- le type charactère est `char` (c'est un type sur 8 bits, vous n'aurez pas besoin du type `WideChar` sur 16 bits) pour les exercices
 - les chaînes de caractères litérales sont entre `'` et pas entre `"` 
 - l'opérateur de concaténation de chaînes de caractères est `+`
 ```
 writeln('La valeur de NOM est ' + NOM);
 ```
-- la fonction `Chr(n)` permet d'obtenir le caractère de code `n`
+- la fonction `Chr(n)` permet d'obtenir le `char` de code `n`
 ```
 writeln(Chr(97));
 ```
-- la fonction `Ord('x')` permet d'obtenir le code du caractère `'x'`
+- la fonction `Ord('x')` permet d'obtenir le code du `char` `'x'`
 ```
 writeln(Ord('a'));
 ```
