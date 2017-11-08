@@ -50,6 +50,13 @@ writeln('Résultat sur StdOut');
 writeln(StdErr, 'trace sur StdErr');
 ```
 
+## Quelques fonctions opérant sur des chaînes de caractères
+- la fonction `LeftStr(const S: string; Count: Integer): string;` retourne une chaîne contenant les `Count` premiers caractères de `S`
+- la fonction `RightStr(const S: string; Count: Integer): string;` retourne une chaîne contenant les `Count` derniers caractères de `S`
+- la fonction `Trim(const S: string): string;` retourne une chaîne copie de `S` en enlevant les espaces (et caractères de contrôle) au début et à la fin de `S`
+- la fonction `LeftTrim(const S: string): string;` retourne une chaîne copie de `S` en enlevant les espaces (et caractères de contrôle) au début de `S`
+- la fonction `RightTrim(const S: string): string;` retourne une chaîne copie de `S` en enlevant les espaces (et caractères de contrôle) à la fin de `S`
+
 ## Les tableaux
 - la déclaration d'un tableau statique
 ```
@@ -60,6 +67,7 @@ var
 ```
 begin
    Nombres[5] := 5000;
+   writeln("Nombres[5] contains " + IntToStr(Nombres[5]));
    ...
 end;
 ```
