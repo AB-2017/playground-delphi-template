@@ -59,8 +59,9 @@ writeln(StdErr, 'trace sur StdErr');
 
 ```
 var
-  S : string := '  Y2 for ever !  ';
+  S : string ;
 begin
+  S := '  Y2 for ever  !    ';
   writeln(LeftStr(Trim(S),2)); // Y2
 end;
 ```
